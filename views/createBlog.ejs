@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<%- include("partials/header.ejs") %>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/blog.css">
+
+  <!-- Add the link to the CSS stylesheet here -->
+  <!-- Hint: the link is relative to the public folder -->
+  <title>Band Generator</title>
+</head>
+
+
+<h1>Contact Me</h1>
+<form>
+  <input name="name" type="text" class="feedback-input" placeholder="Alex" />
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <input type="submit" value="SUBMIT" />
+</form>
+
+<%- include("partials/footer.ejs") %>
+
