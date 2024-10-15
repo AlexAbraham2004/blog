@@ -22,7 +22,6 @@ app.post("/view", (req, res) => {
     res.render("viewBlog.ejs")
 });
 
-
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });

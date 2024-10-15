@@ -7,19 +7,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/blog.css">
-
-  <!-- Add the link to the CSS stylesheet here -->
-  <!-- Hint: the link is relative to the public folder -->
-  <title>Band Generator</title>
+  <title>Creating a Blog Post</title>
 </head>
 
 
-<h1>Contact Me</h1>
-<form>
-  <input name="name" type="text" class="feedback-input" placeholder="Alex" />
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-  <input type="submit" value="SUBMIT" />
+<h1>Let's Make a Blog Post!</h1>
+
+<form action="/submit" method="POST">
+    <div class = "divName">
+        <label for="name">Full Name:</label><br>
+        <input name="name" type="text" class="in name" placeholder="Author's Name" />
+    </div>
+    
+    <div class = "divEmail">
+        <label for="email">Email:</label><br>
+        <input name="email" type="text" class="in email" placeholder="Author's Email" />
+    </div>
+
+    <div class = "divText">
+        <label for="blog-text">Blog Text:</label><br>
+        <textarea name="blog-text" class="in article" rows = "20" cols = "40" placeholder="Start Writing Here..."></textarea></div>
+    </div>
+    
+    <div>    
+        <input type="submit" value="PUBLISH">
+    </div>    
 </form>
 
 <%- include("partials/footer.ejs") %>

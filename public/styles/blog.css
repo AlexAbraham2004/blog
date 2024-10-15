@@ -22,17 +22,26 @@ body {
     font-size: 3.5rem;
   }
   
-  input {
+  input{
     appearance: none;
     -webkit-appearance: none;
     border: 0;
     font-size: 0.9rem;
-    background: pink;
+    background: white;
     padding: 1rem;
     color: white;
     cursor: pointer;
     margin: 10px; 
   }
+  
+  .divName, .divEmail{
+    display: inline-block; 
+    margin-bottom: 10px;
+  }
+
+  .divText label{
+    margin: 10px;
+  } 
   
   footer {
     position: absolute;
