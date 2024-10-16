@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
+var blogCount = 0;
 let blogs = []; // Use an array to store multiple blog entries
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,6 +25,7 @@ app.get("/view", (req, res) => {
 
 app.post("/submit", (req, res) => {
     const newBlog = {
+        id: blogCount++,
         authorName: req.body.name,
         authorEmail: req.body.email,
         blogTitle: req.body["blog-title"],
@@ -34,6 +36,12 @@ app.post("/submit", (req, res) => {
 
     res.redirect("/view");
 });
+
+app.post('/delete', (req, res) => {
+    blogs.splice(req.body.delete, 1); // Filter out the blog to be deleted
+    res.redirect('/view');
+});
+
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);

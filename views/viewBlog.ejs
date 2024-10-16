@@ -24,10 +24,16 @@
     <% } %>
 
     <% for(var i = 0; i < count; i++){ %>
+      <%var delName = "delete " + (i);%> 
+      
       <div class="list-of-Blogs">
         <h2 class="title"><%= blogs[i].blogTitle %></h2>
         <p>By: <%= blogs[i].authorName %> (<%= blogs[i].authorEmail %>)</p>
         <p>&emsp; <%= blogs[i].blogText %></p>
+
+        <form action="/delete" method="POST">
+          <button name= <%= delName%> value=<%= delName.charAt([delName.length - 1])%>>delete</button>
+        </form>
       </div>
     <% } %>
   </div>
