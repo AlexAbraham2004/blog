@@ -32,6 +32,10 @@ html{
 
 }
 
+.container button{
+  background-color: red;
+}
+
 
 .list-of-Blogs h2, .list-of-Blogs p {
   margin: 10px 0;

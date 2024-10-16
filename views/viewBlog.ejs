@@ -32,7 +32,7 @@
         <p>&emsp; <%= blogs[i].blogText %></p>
 
         <form action="/delete" method="POST">
-          <button name= <%= delName%> value=<%= delName.charAt([delName.length - 1])%>>delete</button>
+          <button name= <%= delName%> value=<%= delName.charAt([delName.length - 1])%>><strong>DELETE</strong></button>
         </form>
       </div>
     <% } %>
