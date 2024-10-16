@@ -5,27 +5,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="styles/blog.css"> -->
+  <link rel="stylesheet" href="styles/createBlog.css"> 
   <title>Creating a Blog Post</title>
 </head>
 
 
 <h1>Let's Make a Blog Post!</h1>
-
+<div class="container">
 <form action="/submit" method="POST">
-    <div class = "divName">
-        <label for="name">Full Name:</label><br>
-        <input name="name" type="text" class="in name" placeholder="Author's Name" />
-    </div>
-    
-    <div class = "divEmail">
-        <label for="email">Email:</label><br>
-        <input name="email" type="text" class="in email" placeholder="Author's Email" />
+    <div class = "firstLine">
+        <div class = "divName">
+            <label for="name">Full Name:</label><br>
+            <input name="name" type="text" class="in name" placeholder="Author's Name" required/>
+        </div>
+        
+        <div class = "divEmail">
+            <label for="email">Email:</label><br>
+            <input name="email" type="text" class="in email" placeholder="Author's Email" required />
+        </div>
     </div>
 
     <div class = "divTitle">
         <label for="blog-title">Blog Title:</label><br>
-        <input name="blog-title" type="text" class="in title" placeholder="Blog Title" />
+        <input name="blog-title" type="text" class="in title" placeholder="Blog Title" required/>
     </div>
 
     <div class = "divText">
@@ -34,8 +36,9 @@
     </div>
     
     <div>    
-        <input type="submit" value="PUBLISH">
+        <input class = "button" type="submit" value="PUBLISH">
     </div>    
+</div>
 </form>
 
 

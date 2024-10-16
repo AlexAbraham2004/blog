@@ -1,0 +1,55 @@
+html{
+    background-color: rgb(255, 238, 215);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Center the content */
+  }
+
+  .firstLine{
+    display: inline-flex;
+  }
+
+  .divName, .divEmail {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-top: 5px;
+ 
+}
+  
+  .divTitle, .divText{
+    text-align: center;
+    margin-top: 5px;
+  }
+
+
+  
+  .button{
+    background-color: teal;
+    color: white; 
+    width: 150px; 
+    height: 35px;  
+    border: 3px solid black; 
+    position: relative;
+    left: 40%; 
+
+  }
+  
+  
+  .list-of-Blogs h2, .list-of-Blogs p {
+    margin: 10px 0;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+  }
+  
+  @media (min-width: 1100px) {
+    .button{
+        left: 45%;
+    }
+  }
+  

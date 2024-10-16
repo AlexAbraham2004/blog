@@ -38,8 +38,10 @@ html{
   word-wrap: break-word; /* Ensure long words break to the next line */
 }
 
-.title {
+h1 {
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 @media (max-width: 880px) {
