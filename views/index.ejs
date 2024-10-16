@@ -6,32 +6,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="styles/main.css"> -->
-
-  <!-- Add the link to the CSS stylesheet here -->
-  <!-- Hint: the link is relative to the public folder -->
+  <link rel="stylesheet" href="styles/main.css">
   <title>Blog Post Mainpage</title>
 </head>
 
 
 <body>
+    <div class="imgDiv"><img class="profile" src="images/IMG-ALL.jpg" alt="cat profile"></div>
     <div class = "titleDiv">
         <h1>Welcome to <strong>BlogHive!</strong></h1>
     </div>
 
 
-    <div>        
-        <form class = "button" action="/view" method="GET">
-            <input type="submit" value="View Blog Posts ">
-        </form>
-
-
-        <form class = "button" action="/create" method="GET">
-            <input type="submit" value="Create Blog Posts">
-        </form>
-
+    <div class = container>
+        <div>        
+            <form class = "button view" action="/view" method="GET">
+                <input id = "buttonView" type="submit" value="View Blog Posts ">
+            </form>
+        </div>
+        <div>
+            <form class = "button create" action="/create" method="GET">
+                <input id = "buttonCreate" type="submit" value="Create Blog Posts">
+            </form>
+        </div>
     </div>
-    <img class="profile" src="images/IMG-ALL.jpg" alt="cat profile">
+
+    <p>"We Welcome EVERYONE to write a blog about ANYTHING! Please enjoy this website!"</p>
     
 </body>
 
