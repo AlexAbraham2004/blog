@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
-
-  <!-- Add the link to the CSS stylesheet here -->
-  <!-- Hint: the link is relative to the public folder -->
+  <link rel="stylesheet" href="/styles/main.css">
   <title>Blog Posts Viewing</title>
 </head>
 
-
-<h1>The Blogs List</h1>
-<div class = "container">
-
-  <div class="list-of-Blogs">
-    <h2 class="title"><%= blogTitle  %></h2>
-    <p>By: <%= authorName %> (<%= authorEmail %>)</p>
-    <p>
-      &emsp; 
-      <%= blogText %></p>
+<body>
+  <h1>The Blogs List</h1>
+  <form class = "buttomForm"  action="/create" method="GET">
+    <input class = "button" type="submit" value="Create Another Blog">
+</form>
+  <% var colors = []%>
+  <div class="container">
+    <% for(var i = 0; i < count; i++){ %>
+      <div class="list-of-Blogs">
+        <h2 class="title"><%= blogs[i].blogTitle %></h2>
+        <p>By: <%= blogs[i].authorName %> (<%= blogs[i].authorEmail %>)</p>
+        <p>&emsp; <%= blogs[i].blogText %></p>
+      </div>
+    <% } %>
   </div>
 
 
-  <div class="list-of-Blogs">
-    <h2 class="title"><%= blogTitle  %></h2>
-    <p>By: <%= authorName %> (<%= authorEmail %>)</p>
-    <p>
-      &emsp; 
-      <%= blogText %></p>
-  </div>
+</body>
 
-</div>
+</html>
