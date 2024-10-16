@@ -49,3 +49,29 @@ h1{
     }
   }
   
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+.header{
+    top: 0px;
+    height: 50px;
+    z-index: 1;
+}
+
+.header div{
+    text-align: right;
+    margin-right: 2.5%;
+}
+
+.header div .homeButton{
+    background-color: teal;
+    width: 80px; 
+    height: 27px;
+    border: 1.5px solid black;
+    color: white;
+}
+
+  
+  
