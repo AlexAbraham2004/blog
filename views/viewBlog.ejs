@@ -8,13 +8,20 @@
   <title>Blog Posts Viewing</title>
 </head>
 
-<body>
+<!-- <body>
+  <form class = "buttonHome"  action="/" method="GET">
+    <input class="button" type="submit" value="Home">
+</form> -->
   <h1>The Blogs List</h1>
-  <form class = "buttomForm"  action="/create" method="GET">
-    <input class = "button" type="submit" value="Create Another Blog">
+  <form class = "buttonForm"  action="/create" method="GET">
+    <input class="button" type="submit" value="<%= count === 0 ? 'Make the FIRST!' : 'Create Another Blog' %>">
 </form>
   <% var colors = []%>
   <div class="container">
+    <% if (count === 0){ %>
+      <h2>There are no blogs to view :(</h2>
+    <% } %>
+
     <% for(var i = 0; i < count; i++){ %>
       <div class="list-of-Blogs">
         <h2 class="title"><%= blogs[i].blogTitle %></h2>

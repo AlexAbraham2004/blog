@@ -22,12 +22,14 @@ html{
   padding: 10px; /* Add some padding */
 }
 
+
 .button{
   background-color: teal;
   color: white; 
   width: 150px; 
   height: 35px;  
 }
+
 
 .list-of-Blogs h2, .list-of-Blogs p {
   margin: 10px 0;
