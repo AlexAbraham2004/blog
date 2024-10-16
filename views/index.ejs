@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("partials/header.ejs") %>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css">
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
 
   <!-- Add the link to the CSS stylesheet here -->
   <!-- Hint: the link is relative to the public folder -->
@@ -16,21 +15,24 @@
 
 
 <body>
-    <h1>Blog Posts!</h1>
-    <div>
+    <div class = "titleDiv">
+        <h1>Welcome to <strong>BlogHive!</strong></h1>
+    </div>
+
+
+    <div>        
         <form class = "button" action="/view" method="POST">
             <input type="submit" value="View Blog Posts ">
         </form>
 
-        <img src="../public/images/IMG-ALL.jpg" alt="General Blog Image (Homepage)">
 
         <form class = "button" action="/create" method="POST">
             <input type="submit" value="Create Blog Posts">
         </form>
 
     </div>
+    <img class="profile" src="images/IMG-ALL.jpg" alt="cat profile">
     
 </body>
 
-<%- include("partials/footer.ejs") %> 
 

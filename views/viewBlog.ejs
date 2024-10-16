@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<%- include("partials/header.ejs") %>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/blog.css">
+  <link rel="stylesheet" href="styles/main.css">
 
   <!-- Add the link to the CSS stylesheet here -->
   <!-- Hint: the link is relative to the public folder -->
@@ -14,13 +13,24 @@
 </head>
 
 
-<h1>Contact Me</h1>
-<form>
-  <input name="name" type="text" class="feedback-input" placeholder="Alex" />
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-  <input type="submit" value="SUBMIT" />
-</form>
+<h1>The Blogs List</h1>
+<div class = "container">
 
-<%- include("partials/footer.ejs") %>
+  <div class="list-of-Blogs">
+    <h2 class="title"><%= blogTitle  %></h2>
+    <p>By: <%= authorName %> (<%= authorEmail %>)</p>
+    <p>
+      &emsp; 
+      <%= blogText %></p>
+  </div>
 
+
+  <div class="list-of-Blogs">
+    <h2 class="title"><%= blogTitle  %></h2>
+    <p>By: <%= authorName %> (<%= authorEmail %>)</p>
+    <p>
+      &emsp; 
+      <%= blogText %></p>
+  </div>
+
+</div>

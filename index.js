@@ -1,7 +1,6 @@
 import express from "express"
 import bodyParser from "body-parser"
 
-
 const app = express();
 const port = 3000;
 
@@ -25,3 +24,15 @@ app.post("/view", (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+app.post("/submit", (req, res) => {  
+    
+    res.render("viewBlog.ejs", 
+      {
+        authorName : req.body["name"], 
+        authorEmail : req.body["email"], 
+        blogTitle : req.body["blog-title"],
+        blogText : req.body["blog-text"], 
+        
+      });       
+  });
